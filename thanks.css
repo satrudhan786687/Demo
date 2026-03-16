@@ -1,0 +1,87 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#4ca1af);
+background-size:400% 400%;
+animation:gradientMove 10s infinite alternate;
+overflow:hidden;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+.container{
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:20px;
+color:white;
+width:350px;
+box-shadow:0 0 25px rgba(0,0,0,0.4);
+animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.checkmark{
+font-size:70px;
+color:#00ff9d;
+margin-bottom:10px;
+animation:pop 0.7s ease;
+}
+
+@keyframes pop{
+0%{transform:scale(0);}
+80%{transform:scale(1.2);}
+100%{transform:scale(1);}
+}
+
+h1{
+font-size:35px;
+margin-bottom:10px;
+}
+
+p{
+font-size:15px;
+margin-bottom:25px;
+line-height:1.5;
+}
+
+.btn{
+text-decoration:none;
+padding:12px 25px;
+background:#00ff9d;
+color:black;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.1);
+}
