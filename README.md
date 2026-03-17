@@ -1,2 +1,1 @@
-#Portfolio
- This is my portfolio profile
+This is my portfolio project
